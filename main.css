@@ -12,20 +12,26 @@ body, body button {
     background-color: #14120B;
     color: #fff;
     font-family: 'cursor';
+    margin: 0;
+    padding: 0;
 }
 
 .main-section {
-    width: 70%;
-    margin: auto;
+    padding: 112px 20px 67.2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #navbar-content {
     padding: 10px 20px;
-    margin: 0px 282.5px;
     display: flex;
     align-items: center;
     gap: 10px;
     justify-content: space-between;
+    max-width: 1300px;
+    width: 100%;
 }
 
 #navbar {
@@ -33,6 +39,8 @@ body, body button {
     width: 100%;
     background-color: #14120B;
     top: 0;
+    display: flex;
+    justify-content: center
 }
 
 #logo {
@@ -87,9 +95,9 @@ body, body button {
     color: var(--btn-color);
 }
 
-#main {
+/* #main {
     padding: 112px 20px 67.2px;
-}
+} */
 
 #main-text {
     font-size: 26px;
@@ -111,34 +119,53 @@ body, body button {
     margin: 0px 0px 56px;
 }
 
-.brand-logo {
-    padding: 20px 30px;
+#section-2 {
+    padding: 0px 0px 33.6px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
-    background-color: #1B1913;
-    color: #fff;
 }
 
-#trusted-logos {
-    display: grid;
-    grid-template-columns: repeat(8, auto);
+#section-2-content {
+    width: 100%;
+    max-width: 1300px;
+}
+
+.logo {
+    border-radius: 5px;
+    padding: 0px 7.5px;
+    background-color: #16140F;
+    display: flex;
+    height: 6.25rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-section {
     gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
 }
 
 .brand-logo-image {
-    height: 2.5rem
-}
-
-#section-2 {
-    padding: 0px 0px 33.6px;
+    height: 40px;
+    object-fit: contain;
 }
 
 #trusted-logo-text {
     text-align: center;
     font-size: 15px;
     font-weight: 200;
+}
+
+.trusted-logos {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 #section-3 {
@@ -289,10 +316,15 @@ body, body button {
 
 #section-5-content {
     margin: 44.8px 0px;
+    max-width: 1300px;
 }
 
 #section-6 {
     padding: 67.2px 0px;
+}
+
+#section-6-content {
+    max-width: 1300px;
 }
 
 #section-6-heading {
@@ -367,6 +399,11 @@ body, body button {
 
 #section-7-content {
     margin: 0px 0px 56px;
+    max-width: 1300px;
+}
+
+#section-7-section {
+    margin: 0px 0px 56px 0px;
 }
 
 #section-7-image {
@@ -378,6 +415,13 @@ body, body button {
     padding: 89.6px 0px;
     background-color: #1B1913;
 }
+
+#section-8-container {
+    display: flex;
+    justify-content: center;
+}
+
+
 
 #section-8-heading {
     grid-column-start: 1;
@@ -402,8 +446,8 @@ body, body button {
 }
 
 .section-8-sperator {
-    height: 2px;
-    width: 2px;
+    height: 2.5px;
+    width: 2.5px;
     border-radius: 50%;
     background-color: var(--btn-background-color);
     display: inline-block;
@@ -448,9 +492,9 @@ body, body button {
 #section-8-content {
     display: grid;
     grid-template-columns: repeat(24, 1fr);
-    width: 70%;
-    margin: auto;
-    align-items: start
+    max-width: 1300px;
+    align-items: start;
+    width: 100%;
 }
 
 #section-8-button {
@@ -479,6 +523,9 @@ body, body button {
 #footer-section {
     padding: 67.2px 20px 30px;
     background-color: #1B1913;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-section-heading {
@@ -511,15 +558,15 @@ a {
 #footer-section-content {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    width: 70%;
-    margin: auto;
+    max-width: 1300px;
+    width: 100%;
     line-height: 2;
     margin-bottom: 100.8px;
 }
 
 #copyright-section {
-    width: 70%;
-    margin: auto;
+    width: 100%;
+    max-width: 1300px;
     display: flex;
     justify-content: space-between;
     font-size: 14px;
@@ -534,7 +581,7 @@ a {
 
 #dropdown-section {
     padding: 5.6px 10.5px;
-    background-color: #26241E;
+    background-color: #1A1C1D;
     color: var(--btn-background-color);
     border-radius: 24px;
     border: none;
@@ -549,7 +596,7 @@ a {
 #dark-mode {
     padding: 2px;
     border-radius: 24px;
-    background-color: #26241E;
+    background-color: #1A1C1D;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -575,6 +622,6 @@ a {
 }
 
 #dark {
-    background-color: #3A3833;
+    background-color: #1A1D1E;
     border-radius: 24px;
 }
