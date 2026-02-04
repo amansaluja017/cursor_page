@@ -1,6 +1,9 @@
 :root {
     --btn-background-color: #EDECEC;
     --btn-color: #14120B;
+    --background-color: #100E09;
+    --container-background-color: #16140F;
+    --color: #DCD9D5;
 }
 
 @font-face {
@@ -9,15 +12,15 @@
 }
 
 body, body button {
-    background-color: #14120B;
-    color: #fff;
+    background-color: var(--background-color);
+    color: var(--color);
     font-family: 'cursor';
     margin: 0;
     padding: 0;
 }
 
 .main-section {
-    padding: 112px 20px 67.2px;
+    padding: 0px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,7 +40,7 @@ body, body button {
 #navbar {
     position: sticky;
     width: 100%;
-    background-color: #14120B;
+    background-color: var(--background-color);
     top: 0;
     display: flex;
     justify-content: center
@@ -47,6 +50,7 @@ body, body button {
     display: flex;
     align-items: center;
     gap: 2px;
+    opacity: 0.9;
 }
 
 #image {
@@ -60,7 +64,7 @@ body, body button {
 .link {
     text-decoration: none;
     cursor: pointer;
-    color: #fff;
+    color: var(--color);
     margin-right: 20px;
     font-size: 14px;
 }
@@ -70,7 +74,7 @@ body, body button {
 }
 
 #nav-button1 {
-    border: 1px solid var(--btn-background-color);
+    border: 1px solid #1C1A17;
     background-color: transparent;
     color: var(--btn-background-color);
     padding: 5.6px 10.5px 5.88px;
@@ -87,7 +91,7 @@ body, body button {
 }
 
 #nav-button2 {
-    border-radius: 16px;
+    border-radius: 18px;
     background-color: var(--btn-background-color);
     padding: 8px 16px;
     margin-left: 4px;
@@ -95,9 +99,9 @@ body, body button {
     color: var(--btn-color);
 }
 
-/* #main {
-    padding: 112px 20px 67.2px;
-} */
+#main {
+    padding-top: 112px;
+}
 
 #main-text {
     font-size: 26px;
@@ -156,8 +160,9 @@ body, body button {
 
 #trusted-logo-text {
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 200;
+    margin: 0px 0px 22.4px;
 }
 
 .trusted-logos {
@@ -176,12 +181,17 @@ body, body button {
 }
 
 .blocks {
-    background-color: #1D1B15;
+    background-color: var(--container-background-color);
     border-radius: 5px;
     padding: 17.5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.blocks:hover {
+    background-color: #171611;
+    cursor: pointer;
 }
 
 .block-heading {
@@ -254,6 +264,7 @@ body, body button {
 .card-text {
     margin: 0px;
     line-height: 1.4;
+    color: var(--color);
 }
 
 .avatar {
@@ -266,14 +277,15 @@ body, body button {
     opacity: 0.6;
 }
 
-#section-4-heading {
+#section-4-heading h2 {
     margin-bottom: 56px;
-    font-size: 24px;
+    font-size: 36px;
+    font-weight: 300;
 }
 
 #section-5-heading {
     font-size: 26px;
-    color: var(--btn-background-color);
+    color: var(--color);
     font-weight: 300;
 }
 
@@ -330,15 +342,20 @@ body, body button {
 #section-6-heading {
     font-size: 26px;
     margin: 0px 0px 22.4px;
-    color: var(--btn-background-color);
+    color: var(--color);
     font-weight: 300;
 }
 
 .section-6-card-content {
     padding: 15.9px 17.5px 20px;
-    background-color: #1B1913;
+    background-color: var(--container-background-color);
     border-radius: 5px;
     font-size: 16px;
+}
+
+.section-6-card-content:hover {
+    background-color: #1A1813;
+    cursor: pointer;
 }
 
 .section-6-card-section {
@@ -376,11 +393,6 @@ body, body button {
     opacity: 0.8;
 }
 
-#section-7 {
-    padding: 67.2px 0px;
-    background-color: #14120B;
-}
-
 #section-7-heading {
     font-size: 36px;
     margin: 0px 0px 22.4px;
@@ -398,7 +410,6 @@ body, body button {
 }
 
 #section-7-content {
-    margin: 0px 0px 56px;
     max-width: 1300px;
 }
 
@@ -413,7 +424,7 @@ body, body button {
 #section-8 {
     margin: 67.2px 0px 0px;
     padding: 89.6px 0px;
-    background-color: #1B1913;
+    background-color: var(--container-background-color);
 }
 
 #section-8-container {
@@ -430,13 +441,13 @@ body, body button {
 
 #section-8-heading-text {
     font-size: 16px;
-    color: var(--btn-background-color);
+    color: var(--color);
     font-weight: 100;
 }
 
 .section-8-cards {
     padding: 13.4px 15px 15px;
-    background-color: #201E18;
+    background-color: #1A1813;
     display: flex;
     align-items: start;
     justify-content: space-between;
@@ -455,7 +466,7 @@ body, body button {
 
 .section-8-card-text {
     font-size: 16px;
-    color: var(--btn-background-color);
+    color: var(--color);
     line-height: 1.4;
 }
 
@@ -486,7 +497,7 @@ body, body button {
 }
 
 .section-8-cards:hover {
-    background-color: #26241E;
+    background-color: #1A1C1D;
 }
 
 #section-8-content {
@@ -509,7 +520,6 @@ body, body button {
 
 #section-9 {
     padding: 134.4px 20px;
-    background-color: #14120B;
     text-align: center;
 }
 
@@ -522,7 +532,7 @@ body, body button {
 
 #footer-section {
     padding: 67.2px 20px 30px;
-    background-color: #1B1913;
+    background-color: var(--container-background-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -535,7 +545,7 @@ body, body button {
 .footer-section-heading {
     font-size: 14px;
     text-decoration: none;
-    color: var(--btn-background-color);
+    color: var(--color);
     text-decoration: none;
 }
 
@@ -548,7 +558,7 @@ body, body button {
 a {
     list-style-type: none;
     text-decoration: none;
-    color: var(--btn-background-color);
+    color: var(--color);
     padding: 0;
     margin: 0;
     padding: 4.6px 0px;
