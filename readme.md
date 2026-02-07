@@ -48,6 +48,6 @@ The color scheme follows a dark theme with the following key colors:
 
 ## Screenshots
 
-![Main Screenshot](images/cursor_page_ss.png)
+![Main Screenshot](images/cursor-desktop-image.png)
 
 This screenshot shows the main hero section and navigation of the recreated landing page.
